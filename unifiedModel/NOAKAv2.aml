@@ -1,0 +1,162 @@
+﻿<CAEXFile FileName="NOAKAv2.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd">
+  <AdditionalInformation AutomationMLVersion="2.0" />
+  <AdditionalInformation>
+    <WriterHeader>
+      <WriterName>AutomationML Editor</WriterName>
+      <WriterID>916578CA-FE0D-474E-A4FC-9E1719892369</WriterID>
+      <WriterVendor>AutomationML e.V.</WriterVendor>
+      <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+      <WriterVersion>5.3.3.0</WriterVersion>
+      <WriterRelease>5.3.3.0</WriterRelease>
+      <LastWritingDateTime>2021-03-09T10:51:58.6967875</LastWritingDateTime>
+      <WriterProjectTitle>unspecified</WriterProjectTitle>
+      <WriterProjectID>unspecified</WriterProjectID>
+    </WriterHeader>
+  </AdditionalInformation>
+  <InstanceHierarchy Name="InstanceHierarchy">
+    <Version>0</Version>
+    <InternalElement Name="FunctionAspect" ID="29afe8a9-4c88-40ee-b134-45225fe89103">
+      <InternalElement Name="NOAKA" ID="65c9c499-95b7-4ee2-9f90-6bcb18b518c0" RefBaseSystemUnitPath="InformationModelFrameworkUnitClassLib/FunctionObject">
+        <InternalElement Name="FulfilledBy" ID="169e9a68-9c3d-4f7f-8289-737cb66d81b2">
+          <ExternalInterface Name="ProductRelation" ID="bc5a172d-a46b-47ed-bd42-b61cf5229aa9" RefBaseClassPath="InformationModelFrameworkInterfaceClassLib/InterAspectRelation" />
+          <SupportedRoleClass RefRoleClassPath="InformationModelFrameworkRoleClassLib/AspectRelationBaseRole/FulfilledBy" />
+        </InternalElement>
+        <InternalElement Name="HasParts" ID="4fa7d9a4-29db-471d-981f-44521784663d">
+          <InternalElement Name="Fulla" ID="0da1f72e-bda6-43af-908d-2b1edf5ebb32" RefBaseSystemUnitPath="InformationModelFrameworkUnitClassLib/FunctionObject">
+            <InternalElement Name="FulfilledBy" ID="b59e8da7-a99b-44ba-abc5-2a4ff6916846">
+              <ExternalInterface Name="ProductRelation" ID="729530f3-26a1-47cb-bfb3-0b74519079c6" RefBaseClassPath="InformationModelFrameworkInterfaceClassLib/InterAspectRelation" />
+              <SupportedRoleClass RefRoleClassPath="InformationModelFrameworkRoleClassLib/AspectRelationBaseRole/FulfilledBy" />
+            </InternalElement>
+            <InternalElement Name="HasParts" ID="3102ea64-7e2d-4052-a5ef-b7e830e17e9b">
+              <SupportedRoleClass RefRoleClassPath="InformationModelFrameworkRoleClassLib/AspectObjectBaseRole/FunctionObjectRole" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="InformationModelFrameworkRoleClassLib/AspectObjectBaseRole/FunctionObjectRole" />
+          </InternalElement>
+          <SupportedRoleClass RefRoleClassPath="InformationModelFrameworkRoleClassLib/AspectObjectBaseRole/FunctionObjectRole" />
+        </InternalElement>
+        <RoleRequirements RefBaseRoleClassPath="InformationModelFrameworkRoleClassLib/AspectObjectBaseRole/FunctionObjectRole" />
+      </InternalElement>
+    </InternalElement>
+    <InternalElement Name="AreaAspect" ID="9ae6f394-5546-4bd9-8380-d86386044a41" />
+  </InstanceHierarchy>
+  <InterfaceClassLib Name="AutomationMLInterfaceClassLib">
+    <Description>Standard Automation Markup Language Interface Class Library - Part 1 Content extended with Part 3 and Part 4 Content</Description>
+    <Version>2.2.2</Version>
+    <InterfaceClass Name="AutomationMLBaseInterface">
+      <InterfaceClass Name="Order" RefBaseClassPath="AutomationMLBaseInterface">
+        <Attribute Name="Direction" AttributeDataType="xs:string" />
+      </InterfaceClass>
+      <InterfaceClass Name="PortConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+      <InterfaceClass Name="InterlockingConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+      <InterfaceClass Name="PPRConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+      <InterfaceClass Name="ExternalDataConnector" RefBaseClassPath="AutomationMLBaseInterface">
+        <Attribute Name="refURI" AttributeDataType="xs:anyURI" />
+        <InterfaceClass Name="COLLADAInterface" RefBaseClassPath="ExternalDataConnector">
+          <Attribute Name="refType" AttributeDataType="xs:string" />
+          <Attribute Name="target" AttributeDataType="xs:token" />
+        </InterfaceClass>
+        <InterfaceClass Name="PLCopenXMLInterface" RefBaseClassPath="ExternalDataConnector">
+          <InterfaceClass Name="LogicInterface" RefBaseClassPath="PLCopenXMLInterface">
+            <InterfaceClass Name="SequencingLogicInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" />
+            <InterfaceClass Name="BehaviourLogicInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" />
+            <InterfaceClass Name="SequencingBehaviourLogicInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" />
+            <InterfaceClass Name="InterlockingLogicInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" />
+          </InterfaceClass>
+          <InterfaceClass Name="LogicElementInterface" RefBaseClassPath="PLCopenXMLInterface" />
+          <InterfaceClass Name="VariableInterface" RefBaseClassPath="PLCopenXMLInterface">
+            <InterfaceClass Name="InterlockingVariableInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/VariableInterface">
+              <Attribute Name="SafeConditionEquals" AttributeDataType="xs:boolean">
+                <DefaultValue>true</DefaultValue>
+              </Attribute>
+            </InterfaceClass>
+          </InterfaceClass>
+        </InterfaceClass>
+      </InterfaceClass>
+      <InterfaceClass Name="Communication" RefBaseClassPath="AutomationMLBaseInterface">
+        <InterfaceClass Name="SignalInterface" RefBaseClassPath="Communication" />
+      </InterfaceClass>
+      <InterfaceClass Name="AttachmentInterface" RefBaseClassPath="AutomationMLBaseInterface" />
+    </InterfaceClass>
+    <InterfaceClass Name="InterfaceClass" />
+  </InterfaceClassLib>
+  <InterfaceClassLib Name="InformationModelFrameworkInterfaceClassLib">
+    <Version>0</Version>
+    <InterfaceClass Name="InterAspectRelation" />
+  </InterfaceClassLib>
+  <RoleClassLib Name="AutomationMLBaseRoleClassLib">
+    <Description>Automation Markup Language Base Role Class Library - Part 1 Content extended with Part 3 and Part 4 Content</Description>
+    <Version>2.2.2</Version>
+    <RoleClass Name="AutomationMLBaseRole">
+      <RoleClass Name="Group" RefBaseClassPath="AutomationMLBaseRole">
+        <Attribute Name="AssociatedFacet" AttributeDataType="xs:string" />
+        <RoleClass Name="InterlockingSourceGroup" RefBaseClassPath="Group" />
+        <RoleClass Name="InterlockingTargetGroup" RefBaseClassPath="Group" />
+      </RoleClass>
+      <RoleClass Name="Facet" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Port" RefBaseClassPath="AutomationMLBaseRole">
+        <Attribute Name="Direction" AttributeDataType="xs:string" />
+        <Attribute Name="Cardinality">
+          <Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" />
+          <Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" />
+        </Attribute>
+        <Attribute Name="Category" AttributeDataType="xs:string" />
+        <ExternalInterface Name="ConnectionPoint" ID="9942bd9c-c19d-44e4-a197-11b9edf264e7" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" />
+      </RoleClass>
+      <RoleClass Name="Resource" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Product" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Process" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Structure" RefBaseClassPath="AutomationMLBaseRole">
+        <RoleClass Name="ProductStructure" RefBaseClassPath="Structure" />
+        <RoleClass Name="ProcessStructure" RefBaseClassPath="Structure" />
+        <RoleClass Name="ResourceStructure" RefBaseClassPath="Structure" />
+      </RoleClass>
+      <RoleClass Name="PropertySet" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Frame" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="LogicObject" RefBaseClassPath="AutomationMLBaseRole" />
+    </RoleClass>
+  </RoleClassLib>
+  <RoleClassLib Name="InformationModelFrameworkRoleClassLib">
+    <Version>0</Version>
+    <RoleClass Name="AspectObjectBaseRole">
+      <RoleClass Name="FunctionObjectRole">
+        <RoleClass Name="ProcessingObjectRole">
+          <RoleClass Name="Reservoir" />
+          <RoleClass Name="ProcessingSystem" />
+        </RoleClass>
+        <RoleClass Name="ProcessingTransportRole" />
+        <RoleClass Name="PowerObjectRole" />
+      </RoleClass>
+      <RoleClass Name="AreaObjectRole" />
+      <RoleClass Name="ProductObjectRole" />
+    </RoleClass>
+    <RoleClass Name="AspectRelationBaseRole">
+      <RoleClass Name="FulfilledBy">
+        <ExternalInterface Name="ProductRelation" ID="03e3e807-07b2-4e0e-88bb-ab72fd1207e1" RefBaseClassPath="InformationModelFrameworkInterfaceClassLib/InterAspectRelation" />
+      </RoleClass>
+      <RoleClass Name="Fulfills">
+        <ExternalInterface Name="FunctionRelation" ID="93610c4e-fcb4-4390-8dd7-b4665cd0c286" RefBaseClassPath="InformationModelFrameworkInterfaceClassLib/InterAspectRelation" />
+      </RoleClass>
+    </RoleClass>
+    <RoleClass Name="RoleClass" />
+  </RoleClassLib>
+  <SystemUnitClassLib Name="InformationModelFrameworkUnitClassLib">
+    <Version>0</Version>
+    <SystemUnitClass Name="FunctionObject" ID="9652075c-fd68-4a82-8a52-21ac869de32b">
+      <InternalElement Name="FulfilledBy" ID="fae9d010-c00c-4901-906d-9a9097af2e46">
+        <ExternalInterface Name="ProductRelation" ID="8364b58a-ce9e-4e4a-bd34-9b81a5336c49" RefBaseClassPath="InformationModelFrameworkInterfaceClassLib/InterAspectRelation" />
+        <SupportedRoleClass RefRoleClassPath="InformationModelFrameworkRoleClassLib/AspectRelationBaseRole/FulfilledBy" />
+      </InternalElement>
+      <InternalElement Name="HasParts" ID="0d1bd823-04ba-4a01-8b64-3c44ac264735">
+        <SupportedRoleClass RefRoleClassPath="InformationModelFrameworkRoleClassLib/AspectObjectBaseRole/FunctionObjectRole" />
+      </InternalElement>
+      <SupportedRoleClass RefRoleClassPath="InformationModelFrameworkRoleClassLib/AspectObjectBaseRole/FunctionObjectRole" />
+    </SystemUnitClass>
+    <SystemUnitClass Name="ProductObject" ID="4904abc4-9312-43fc-931e-c083fbdb9869">
+      <InternalElement Name="Fulfills" ID="6680f3f3-5941-49d7-9b1d-732bbae77dc0">
+        <ExternalInterface Name="InterAspectRelation" ID="b3364951-6207-4a91-a270-03db2898cb23" RefBaseClassPath="InformationModelFrameworkInterfaceClassLib/InterAspectRelation" />
+        <RoleRequirements RefBaseRoleClassPath="InformationModelFrameworkRoleClassLib/AspectRelationBaseRole/Fulfills" />
+      </InternalElement>
+      <SupportedRoleClass RefRoleClassPath="InformationModelFrameworkRoleClassLib/AspectObjectBaseRole/ProductObjectRole" />
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+</CAEXFile>

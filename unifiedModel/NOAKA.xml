@@ -1,0 +1,742 @@
+<?xml version="1.0"?>
+<aas:aasenv xmlns:IEC="http://www.admin-shell.io/IEC61360/2/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:abac="http://www.admin-shell.io/aas/abac/2/0" xsi:schemaLocation="http://www.admin-shell.io/aas/2/0 AAS.xsd http://www.admin-shell.io/IEC61360/2/0 IEC61360.xsd" xmlns:aas="http://www.admin-shell.io/aas/2/0">
+  <aas:assetAdministrationShells>
+    <aas:assetAdministrationShell>
+      <aas:idShort>EquinorPortfolio</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/5280_3180_3012_6161</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/7101_3180_3012_2512</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs />
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>Kårstø</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/2280_3180_3012_8368</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/2511_3180_3012_1764</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs />
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>Sture</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/0280_3180_3012_6378</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/6021_3180_3012_0114</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs />
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>Licence1234</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/8180_3180_3012_5327</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/8521_3180_3012_3968</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs />
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>NOAKA</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/6170_3180_3012_9159</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/5131_3180_3012_9899</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/7391_7080_3012_2895</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>Fulla</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/3170_3180_3012_8781</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/8431_3180_3012_9176</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/4102_7080_3012_2224</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>Frøy</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/2270_3180_3012_7574</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/6531_3180_3012_7016</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/8042_7080_3012_3300</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>Rind</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/6270_3180_3012_0639</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/5041_3180_3012_5247</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/6462_7080_3012_4295</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>NOA_PdQ</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/1370_3180_3012_9100</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/7141_3180_3012_0063</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/7072_7080_3012_5237</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>AskjaUPP</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/5570_3180_3012_6130</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/3341_3180_3012_8765</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/4055_7080_3012_2337</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/6172_7080_3012_1773</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>ProcessSupportSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/8570_3180_3012_8533</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/6051_3180_3012_5969</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/3164_7080_3012_2074</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>MainProcessSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/0080_3180_3012_3147</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/2251_3180_3012_2641</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/1384_7080_3012_5929</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>UtilitySystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/3080_3180_3012_2161</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/1351_3180_3012_4999</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/4494_7080_3012_8525</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>OilExportSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/5080_3180_3012_3196</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/7451_3180_3012_0427</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/7215_7080_3012_3272</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>GasExportSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/aas/8080_3180_3012_4153</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://example.com/ids/asset/0161_3180_3012_9920</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/9025_7080_3012_6697</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+  </aas:assetAdministrationShells>
+  <aas:assets>
+    <aas:asset>
+      <aas:idShort>EquinorPortfolio</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/7101_3180_3012_2512</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>Kårstø</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/2511_3180_3012_1764</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>Sture</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/6021_3180_3012_0114</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>Reservoir</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/4221_3180_3012_6410</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>Licence1234</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/8521_3180_3012_3968</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>NOAKA</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/5131_3180_3012_9899</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>Fulla</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/8431_3180_3012_9176</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>Frøy</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/6531_3180_3012_7016</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>Rind</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/5041_3180_3012_5247</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>NOA_PdQ</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/7141_3180_3012_0063</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>AskjaUPP</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/3341_3180_3012_8765</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>ProcessSupportSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/6051_3180_3012_5969</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>MainProcessSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/2251_3180_3012_2641</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>UtilitySystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/1351_3180_3012_4999</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>OilExportSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/7451_3180_3012_0427</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>GasExportSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/asset/0161_3180_3012_9920</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+  </aas:assets>
+  <aas:submodels>
+    <aas:submodel>
+      <aas:idShort>ProcessingSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/7391_7080_3012_2895</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort>Relations</aas:idShort>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:submodelElement>
+                <aas:relationshipElement>
+                  <aas:idShort>suppliesGas</aas:idShort>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:semanticId>
+                    <aas:keys />
+                  </aas:semanticId>
+                  <aas:qualifier />
+                  <aas:first>
+                    <aas:keys>
+                      <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/4102_7080_3012_2224</aas:key>
+                      <aas:key type="ReferenceElement" local="true" idType="IdShort">gasOut</aas:key>
+                    </aas:keys>
+                  </aas:first>
+                  <aas:second>
+                    <aas:keys>
+                      <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/7072_7080_3012_5237</aas:key>
+                      <aas:key type="ReferenceElement" local="true" idType="IdShort">gasIn</aas:key>
+                    </aas:keys>
+                  </aas:second>
+                </aas:relationshipElement>
+              </aas:submodelElement>
+            </aas:value>
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>SatelliteFacility</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/4102_7080_3012_2224</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>partOf</aas:idShort>
+            <aas:category>VARIABLE</aas:category>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/7391_7080_3012_2895</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>gasOut</aas:idShort>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/7391_7080_3012_2895</aas:key>
+                <aas:key type="SubmodelElementCollection" local="true" idType="IdShort">Relations</aas:key>
+                <aas:key type="RelationshipElement" local="true" idType="IdShort">suppliesGas</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>ProcessingFacility</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/8042_7080_3012_3300</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>partOf</aas:idShort>
+            <aas:category>VARIABLE</aas:category>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/7391_7080_3012_2895</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>ProcessingFacility</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/6462_7080_3012_4295</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>partOf</aas:idShort>
+            <aas:category>VARIABLE</aas:category>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/7391_7080_3012_2895</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>ProcessingFacility</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/7072_7080_3012_5237</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>partOf</aas:idShort>
+            <aas:category>VARIABLE</aas:category>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/7391_7080_3012_2895</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>gasIn</aas:idShort>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/7391_7080_3012_2895</aas:key>
+                <aas:key type="SubmodelElementCollection" local="true" idType="IdShort">Relations</aas:key>
+                <aas:key type="RelationshipElement" local="true" idType="IdShort">suppliesGas</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>ProcessingFacility</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/6172_7080_3012_1773</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>partOf</aas:idShort>
+            <aas:category>VARIABLE</aas:category>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/7391_7080_3012_2895</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>ProcessSupportSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/3164_7080_3012_2074</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>partOf</aas:idShort>
+            <aas:category>VARIABLE</aas:category>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/6172_7080_3012_1773</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>MainProcessSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/1384_7080_3012_5929</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>partOf</aas:idShort>
+            <aas:category>VARIABLE</aas:category>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/6172_7080_3012_1773</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>UtilitySystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/4494_7080_3012_8525</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>partOf</aas:idShort>
+            <aas:category>VARIABLE</aas:category>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/6172_7080_3012_1773</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>OilExportSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/7215_7080_3012_3272</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>partOf</aas:idShort>
+            <aas:category>VARIABLE</aas:category>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/6172_7080_3012_1773</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>GasExportSystem</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/9025_7080_3012_6697</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>partOf</aas:idShort>
+            <aas:category>VARIABLE</aas:category>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="Submodel" local="true" idType="IRI">https://example.com/ids/sm/6172_7080_3012_1773</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>Relations</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/4055_7080_3012_2337</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort />
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value>
+              <aas:submodelElement>
+                <aas:relationshipElement>
+                  <aas:idShort />
+                  <aas:kind>Instance</aas:kind>
+                  <aas:semanticId>
+                    <aas:keys />
+                  </aas:semanticId>
+                  <aas:qualifier />
+                  <aas:first>
+                    <aas:keys />
+                  </aas:first>
+                  <aas:second>
+                    <aas:keys />
+                  </aas:second>
+                </aas:relationshipElement>
+              </aas:submodelElement>
+            </aas:value>
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>Relations</aas:idShort>
+      <aas:identification idType="IRI">https://example.com/ids/sm/2271_8080_3012_9308</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys />
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort>Proc</aas:idShort>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+              <aas:keys />
+            </aas:semanticId>
+            <aas:qualifier />
+            <aas:value />
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+  </aas:submodels>
+  <aas:conceptDescriptions />
+</aas:aasenv>

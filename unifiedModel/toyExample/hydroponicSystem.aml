@@ -1,0 +1,355 @@
+﻿<CAEXFile SchemaVersion="3.0" FileName="hydroponicSystem.aml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+  <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
+  <SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="5.3.3.0" LastWritingDateTime="2021-03-11T12:15:20.4176324+01:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="5.3.3.0" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
+  <InstanceHierarchy Name="V1 - Aspect breakdown">
+    <Version>0</Version>
+    <InternalElement Name="PowerSystem" ID="a168a6ad-4aa9-4a0d-99d3-92e35abfcd72">
+      <InternalElement Name="PowerSource" ID="d659fa52-3ad2-42e7-87d4-ba28cda7624f">
+        <RoleRequirements RefBaseRoleClassPath="V1Roles/AspectObject/PowerObject/PowerComponent" />
+      </InternalElement>
+      <InternalElement Name="HighVoltageSystem" ID="12bc8779-ecfb-4d12-a276-8074e47eff5c">
+        <InternalElement Name="GrowthLight" ID="7dde4afd-6fb0-4e9c-96b3-734e66ddc004">
+          <ExternalInterface Name="AssetRelation" ID="a748573b-70cb-46f9-ae5e-54bb2653176d" RefBaseClassPath="V1Interfaces/AssetRelation" />
+          <RoleRequirements RefBaseRoleClassPath="V1Roles/AspectObject/PowerObject/PowerComponent" />
+        </InternalElement>
+        <InternalElement Name="WaterPump" ID="43ac8e8a-40bb-4b75-aa40-4e89aca053bc">
+          <ExternalInterface Name="AssetRelation" ID="3f4d28a2-a12d-4080-84f2-b1cd4c514309" RefBaseClassPath="V1Interfaces/AssetRelation" />
+          <RoleRequirements RefBaseRoleClassPath="V1Roles/AspectObject/PowerObject/PowerComponent" />
+        </InternalElement>
+      </InternalElement>
+      <InternalElement Name="LowVoltageSystem" ID="8745718d-e04d-470f-9e57-9d8e9a4594df">
+        <InternalElement Name="Transformer" ID="909a7403-aa21-456c-b94a-4ac8f4cd2eea" />
+        <InternalElement Name="ChemistryController" ID="ed227edb-c060-4235-b8f9-ad73f103fa0b" />
+        <InternalElement Name="WaterController" ID="e2faee62-f473-4d87-bf22-b69ef99771d9" />
+      </InternalElement>
+      <RoleRequirements RefBaseRoleClassPath="V1Roles/AspectObject/PowerObject/PowerSystem" />
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+    </InternalElement>
+    <InternalElement Name="WaterFlowSystem" ID="77d13faf-9b5d-44b1-9f40-1629f4562ff4">
+      <InternalElement Name="WaterTank" ID="64a208ec-0189-428a-9f84-5c7faf01d644">
+        <ExternalInterface Name="FlowConnection" ID="4b9c8fec-86bb-45c3-8504-36915f0232b8" RefBaseClassPath="V1Interfaces/FlowConnection" />
+      </InternalElement>
+      <InternalElement Name="WaterPump" ID="b2404c1f-d886-4ad4-bae5-5fcdf3216f6c" RefBaseSystemUnitPath="V1Units/FlowComponent">
+        <ExternalInterface Name="AssetRelation" ID="a3f01d09-a26f-4931-a001-93015391cba7" RefBaseClassPath="V1Interfaces/AssetRelation" />
+        <InternalElement Name="Inlet" ID="39559fad-336f-4d4f-a838-0a6562059522">
+          <ExternalInterface Name="FlowConnection" ID="ec7cdc3b-f1f2-4134-a016-0b0cf85ba92f" RefBaseClassPath="V1Interfaces/FlowConnection" />
+        </InternalElement>
+        <InternalElement Name="Outlet" ID="0fdeddaf-4aea-4458-89ff-9b94ee340e4b">
+          <ExternalInterface Name="FlowConnection" ID="c9a452da-000c-48d7-93aa-6ad540d33c0c" RefBaseClassPath="V1Interfaces/FlowConnection" />
+        </InternalElement>
+        <InternalLink RefPartnerSideA="a3f01d09-a26f-4931-a001-93015391cba7" RefPartnerSideB="3f4d28a2-a12d-4080-84f2-b1cd4c514309" Name="InternalLink" />
+        <RoleRequirements RefBaseRoleClassPath="V1Roles/AspectObject/FlowObject" />
+      </InternalElement>
+      <InternalElement Name="Pipeline" ID="dabe48b1-9304-4b8d-9074-703eb659d50f">
+        <InternalElement Name="Elevator" ID="62eebc77-53bb-4a55-a590-fcdf9c998d9e">
+          <InternalElement Name="Inlet" ID="5d5dda26-00d0-4ec4-aae7-510db479c393">
+            <ExternalInterface Name="FlowConnection" ID="71f68844-4a9d-41ec-8211-3a9c5670c7f2" RefBaseClassPath="V1Interfaces/FlowConnection" />
+          </InternalElement>
+          <InternalElement Name="Outlet" ID="82cd712e-45c8-4174-ac3f-4361025ae658">
+            <ExternalInterface Name="FlowConnection" ID="1f8cf47f-9a91-40f7-bcad-36dc8ab20418" RefBaseClassPath="V1Interfaces/FlowConnection" />
+          </InternalElement>
+        </InternalElement>
+        <InternalElement Name="GrowthBattery1" ID="547811d0-2315-4473-847a-62b44c6e7fb1">
+          <InternalElement Name="Inlet" ID="702e2036-e297-4f63-9a95-60ffbe8a5795">
+            <ExternalInterface Name="FlowConnection" ID="86bb20e8-d7ff-4b2e-8823-c4656d4b574a" RefBaseClassPath="V1Interfaces/FlowConnection" />
+          </InternalElement>
+          <InternalElement Name="Outlet" ID="f3fd2cba-a8de-4fc6-a83d-c1857f88b97d">
+            <ExternalInterface Name="FlowConnection" ID="034010ae-c448-4263-93d5-db8c3e64184a" RefBaseClassPath="V1Interfaces/FlowConnection" />
+          </InternalElement>
+        </InternalElement>
+        <InternalElement Name="GrowthBattery2" ID="399cdfdf-43be-4162-9d9c-b246b65cda21" />
+        <InternalElement Name="GrowthBattery3" ID="bcb9cf34-79df-49ff-8e79-e219a6dea3b1" />
+        <InternalElement Name="Outlet" ID="ee123977-eae6-4f9b-9371-2f86c8092d6e" />
+        <InternalLink RefPartnerSideA="86bb20e8-d7ff-4b2e-8823-c4656d4b574a" RefPartnerSideB="1f8cf47f-9a91-40f7-bcad-36dc8ab20418" Name="InternalLink" />
+      </InternalElement>
+      <InternalElement Name="WaterSource" ID="68de29b8-0d55-4d9a-841c-fef1f9a256cc" />
+      <InternalLink RefPartnerSideA="ec7cdc3b-f1f2-4134-a016-0b0cf85ba92f" RefPartnerSideB="4b9c8fec-86bb-45c3-8504-36915f0232b8" Name="InternalLink" />
+      <InternalLink RefPartnerSideA="71f68844-4a9d-41ec-8211-3a9c5670c7f2" RefPartnerSideB="c9a452da-000c-48d7-93aa-6ad540d33c0c" Name="InternalLink1" />
+    </InternalElement>
+    <InternalElement Name="GrowthSystem" ID="d489c9e9-0c09-4f93-b7d0-d3f8b7f501e6">
+      <InternalElement Name="GrowthLight" ID="e161f175-5c4b-4fcc-a93c-a290099d2d6a">
+        <Attribute Name="Bandwidth" AttributeDataType="xs:string" />
+        <ExternalInterface Name="AssetRelation" ID="753a048e-f859-448d-bda7-12d69894fe19" RefBaseClassPath="V1Interfaces/AssetRelation" />
+        <InternalLink RefPartnerSideA="753a048e-f859-448d-bda7-12d69894fe19" RefPartnerSideB="a748573b-70cb-46f9-ae5e-54bb2653176d" Name="InternalLink" />
+        <RoleRequirements RefBaseRoleClassPath="V1Roles/AspectObject/GrowthObject/GrowthLight" />
+      </InternalElement>
+      <InternalElement Name="GrowthBattery1" ID="3aa7ab6d-15d8-4a21-a63e-d393b1877520">
+        <InternalElement Name="ProduceComponent1" ID="83d00a02-46ea-4ae7-b8f4-a32e41296899">
+          <InternalElement Name="GrowthMedium" ID="f711d0af-7213-43af-bca3-3c6883b389a8" />
+          <InternalElement Name="TomatoPlant" ID="767a73e3-d474-49bf-9cae-17e89481d380" />
+        </InternalElement>
+        <InternalElement Name="ProduceComponent2" ID="b201c509-3509-4aee-b724-e472056c3140">
+          <InternalElement Name="GrowthMedium" ID="b453fba0-5fdf-43e4-a9c7-2aab2beddc98" />
+          <InternalElement Name="ChilliPlant" ID="e07e3122-7845-4514-8dcc-a66fff9b7537" />
+        </InternalElement>
+      </InternalElement>
+      <InternalElement Name="GrowthBattery2" ID="aeb6dd98-6425-408a-bc98-5cd5c1eed45e" />
+      <InternalElement Name="GrowthBattery3" ID="14b6a775-4e1a-4a6a-ad96-84c014d4a3e3" />
+      <InternalElement Name="GrowthMedium" ID="1ec284b5-3d3a-46cc-9fee-578ed4fe7d21" />
+      <InternalElement Name="Regulators" ID="844a5e09-55a3-4e5f-b55b-b592004da6f1">
+        <InternalElement Name="InternalElement" ID="a3df7261-3142-40be-b09a-595a715efc36" />
+      </InternalElement>
+    </InternalElement>
+  </InstanceHierarchy>
+  <InstanceHierarchy Name="V2 - Asset breakdown">
+    <Version>0</Version>
+    <InternalElement Name="GrowthLight" ID="4d305a4f-78b0-40cd-90c9-288f478929f7">
+      <InternalElement Name="PowerConsumer" ID="0cf2b258-9fd6-45d3-be9b-9bb7bc60f086" />
+      <InternalElement Name="LightEmitter" ID="ed828f18-b90b-41b3-966f-2acba05ebf21" />
+    </InternalElement>
+    <InternalElement Name="GrowthBatteries" ID="3c028e61-4b25-40f6-8312-f4c469b6a9ec">
+      <InternalElement Name="GrowthBattery1" ID="58cc02f6-771c-4283-9435-8e111841f5cd">
+        <InternalElement Name="FlowComponent" ID="10df8761-a0d7-479b-b9bd-a624a93b97b8">
+          <InternalElement Name="Inlet" ID="b7167b6c-8f5f-4b9a-994a-d1c4c53de46d">
+            <ExternalInterface Name="FlowConnection" ID="59612ced-528a-4b9a-9221-dfedb469c6e7" RefBaseClassPath="V2Interfaces/FlowConnection" />
+          </InternalElement>
+          <InternalElement Name="Outlet" ID="1aded76b-7ead-4109-9687-b55ef4c9d9ee">
+            <ExternalInterface Name="FlowConnection" ID="7fbe4066-9fcd-4035-9808-f70fe51561d1" RefBaseClassPath="V2Interfaces/FlowConnection" />
+          </InternalElement>
+        </InternalElement>
+        <InternalElement Name="Socket1" ID="3dfdd0f9-6110-4bae-9183-d7e4b12a7552" />
+        <InternalElement Name="Socket2" ID="966fc212-f327-4fa8-ba4b-0c6b4b89746f" />
+        <InternalElement Name="Socket3" ID="1ac75893-1c1b-4b61-99c4-5435aef26d1c" />
+      </InternalElement>
+      <InternalElement Name="GrowthBattery2" ID="0b846ce7-59d6-40bb-b351-34166008608a">
+        <InternalElement Name="FlowComponent" ID="d939e78c-6dd9-4321-be1b-b99ab6b4aa52" />
+      </InternalElement>
+      <InternalElement Name="GrowthBattery3" ID="c633d330-99f3-4bd5-95d8-2d99c3551baf">
+        <InternalElement Name="FlowComponent" ID="946fd962-9cae-414b-8dfb-8b128742673d" />
+      </InternalElement>
+    </InternalElement>
+    <InternalElement Name="NutritionSystem" ID="dfa03ff5-7330-4541-ad62-2e9e6d8d45b6">
+      <InternalElement Name="WaterTank" ID="d96c818e-214f-4718-9026-667c1f3c0ce6">
+        <InternalElement Name="FlowComponent" ID="c4be3cf8-880d-4c2f-84be-2f4eace4ec2e">
+          <InternalElement Name="Source" ID="24db269b-8113-4969-ad82-3b2266bc15fe">
+            <ExternalInterface Name="FlowConnection" ID="a85ca86e-4079-46d9-a3a6-fa0f0c686dc2" RefBaseClassPath="V2Interfaces/FlowConnection" />
+          </InternalElement>
+        </InternalElement>
+      </InternalElement>
+      <InternalElement Name="Pump" ID="a90127ba-1589-41f5-906b-226f592d7186">
+        <InternalElement Name="PowerConsumer" ID="1e7b7e4d-3673-47e3-a97b-dfd1b0872a19" />
+        <InternalElement Name="FlowComponent" ID="d6ae818e-8fcb-4935-a507-b01ef16de161">
+          <InternalElement Name="Inlet" ID="0d35955b-81e8-4b04-b987-cea1d5249a7f">
+            <ExternalInterface Name="FlowConnection" ID="5c0a4ef2-48e1-4707-abaa-6116166f648f" RefBaseClassPath="V2Interfaces/FlowConnection" />
+          </InternalElement>
+          <InternalElement Name="Outlet" ID="2f087c0b-5f01-4f7f-88f9-ee3199d8be11">
+            <ExternalInterface Name="FlowConnection" ID="0fb31f18-71f5-40d6-a942-a940e289c643" RefBaseClassPath="V2Interfaces/FlowConnection" />
+          </InternalElement>
+        </InternalElement>
+      </InternalElement>
+      <InternalElement Name="Piping" ID="0ec29b61-ffe4-44a5-b9c8-d137765892bd">
+        <InternalElement Name="ElevatorPipe" ID="8f25f773-fe9a-47e6-8256-84774098ee0a">
+          <InternalElement Name="FlowComponent" ID="2df5287f-90f6-4b79-a7b9-003fd48d7718">
+            <InternalElement Name="Inlet" ID="0fb0856e-59bf-4762-a006-22a63da17f9d">
+              <ExternalInterface Name="FlowConnection" ID="e1385d58-c522-48a0-a91a-7ed2e727abfd" RefBaseClassPath="V2Interfaces/FlowConnection" />
+            </InternalElement>
+            <InternalElement Name="Outlet" ID="c40a12f1-afad-49e7-b39d-a026cd57e585">
+              <ExternalInterface Name="FlowConnection" ID="b9e9541e-7f22-44c3-a5c2-5cd37e59e88b" RefBaseClassPath="V2Interfaces/FlowConnection" />
+              <InternalLink RefPartnerSideA="b9e9541e-7f22-44c3-a5c2-5cd37e59e88b" RefPartnerSideB="59612ced-528a-4b9a-9221-dfedb469c6e7" Name="InternalLink" />
+            </InternalElement>
+          </InternalElement>
+        </InternalElement>
+        <InternalElement Name="Outlet" ID="7978a251-16b2-4528-b53e-76ddad20b23e" />
+      </InternalElement>
+      <InternalElement Name="Regultators" ID="2b841d63-1e28-432b-aa0b-c7e9e5237692">
+        <InternalElement Name="ChemistryReglator" ID="09be9c0b-2b6e-423d-9272-d9b0a453533b" />
+        <InternalElement Name="WaterLevelRegulator" ID="efa38ad5-2ff7-4b97-96a9-245c481a1da6" />
+      </InternalElement>
+      <InternalLink RefPartnerSideA="0fb31f18-71f5-40d6-a942-a940e289c643" RefPartnerSideB="e1385d58-c522-48a0-a91a-7ed2e727abfd" Name="InternalLink" />
+      <InternalLink RefPartnerSideA="a85ca86e-4079-46d9-a3a6-fa0f0c686dc2" RefPartnerSideB="5c0a4ef2-48e1-4707-abaa-6116166f648f" Name="InternalLink1" />
+    </InternalElement>
+    <InternalElement Name="Crops" ID="2de3de6e-b495-4d23-8b95-2cc7ad1ae689">
+      <InternalElement Name="Produce1" ID="b011ff0c-8cac-43c8-a127-9b76f911735d">
+        <InternalElement Name="Plant" ID="2ede7683-2f7f-497a-b3d4-42e92ddcf8ab" />
+        <InternalElement Name="NutritionComponent" ID="fb8a346d-7c57-45d2-9372-2e3024e14b75" />
+      </InternalElement>
+      <InternalElement Name="Produce2" ID="e90628be-d666-4c84-8e78-995971bf3671">
+        <InternalElement Name="Plant" ID="7a08461c-fc2b-4b25-8442-62cf7e747657" />
+        <InternalElement Name="NutritionComponent" ID="04f707b6-fd16-4bc9-b2d5-828bd5b77c6d" />
+      </InternalElement>
+    </InternalElement>
+  </InstanceHierarchy>
+  <InstanceHierarchy Name="V3 - Compact asset breakdown">
+    <Version>0</Version>
+    <InternalElement Name="Pump" ID="40404106-f93f-4de7-85fa-c48dac9be69d">
+      <Attribute Name="Attribute" AttributeDataType="xs:string">
+        <RefSemantic CorrespondingAttributePath="" />
+        <Attribute Name="Attribute" AttributeDataType="xs:string" />
+      </Attribute>
+    </InternalElement>
+  </InstanceHierarchy>
+  <InterfaceClassLib Name="AutomationMLInterfaceClassLib" ChangeMode="state">
+    <Description>Standard Automation Markup Language Interface Class Library - Part 1 Content </Description>
+    <Version>2.10</Version>
+    <Copyright>AutomationML e.V.</Copyright>
+    <InterfaceClass Name="AutomationMLBaseInterface">
+      <InterfaceClass Name="Order" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface">
+        <Attribute Name="Direction" RefAttributeType="AutomationMLBaseAttributeTypeLib/Direction" AttributeDataType="xs:string">
+          <DefaultValue>InOut</DefaultValue>
+          <Constraint Name="AllowedValues">
+            <NominalScaledType>
+              <RequiredValue>In</RequiredValue>
+              <RequiredValue>Out</RequiredValue>
+              <RequiredValue>InOut</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+      </InterfaceClass>
+      <InterfaceClass Name="Port" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface">
+        <Attribute Name="Direction" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/Direction">
+          <Constraint Name="AllowedValues">
+            <NominalScaledType>
+              <RequiredValue>In</RequiredValue>
+              <RequiredValue>Out</RequiredValue>
+              <RequiredValue>InOut</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+        <Attribute Name="Cardinality" RefAttributeType="AutomationMLBaseAttributeTypeLib/Cardinality">
+          <Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" />
+          <Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" />
+        </Attribute>
+        <Attribute Name="Category" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/Category" />
+      </InterfaceClass>
+      <InterfaceClass Name="PPRConnector" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+      <InterfaceClass Name="ExternalDataConnector" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface">
+        <Attribute Name="refURI" AttributeDataType="xs:anyURI" RefAttributeType="AutomationMLBaseAttributeTypeLib/refURI" />
+        <InterfaceClass Name="COLLADAInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector">
+          <Attribute Name="refType" AttributeDataType="xs:string" />
+          <Attribute Name="target" AttributeDataType="xs:token" />
+        </InterfaceClass>
+        <InterfaceClass Name="PLCopenXMLInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector" />
+        <InterfaceClass Name="ExternalDataReference" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector">
+          <Attribute Name="MIMEType" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/MIMEType" />
+        </InterfaceClass>
+      </InterfaceClass>
+      <InterfaceClass Name="Communication" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface">
+        <InterfaceClass Name="SignalInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication" />
+      </InterfaceClass>
+    </InterfaceClass>
+  </InterfaceClassLib>
+  <InterfaceClassLib Name="V1Interfaces">
+    <Version>0</Version>
+    <InterfaceClass Name="FlowConnection" />
+    <InterfaceClass Name="AssetRelation" />
+  </InterfaceClassLib>
+  <InterfaceClassLib Name="V2Interfaces">
+    <Version>0</Version>
+    <InterfaceClass Name="FlowConnection" />
+    <InterfaceClass Name="PowerConnection" />
+  </InterfaceClassLib>
+  <RoleClassLib Name="AutomationMLBaseRoleClassLib">
+    <Description>Automation Markup Language Base Role Class Library - Part 1</Description>
+    <Version>2.10.0</Version>
+    <RoleClass Name="AutomationMLBaseRole" ChangeMode="state">
+      <RoleClass Name="Group" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole">
+        <Attribute Name="AssociatedFacet" RefAttributeType="AutomationMLBaseAttributeTypeLib/AssociatedFacet" AttributeDataType="xs:string" />
+      </RoleClass>
+      <RoleClass Name="Facet" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+      <RoleClass Name="Resource" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+      <RoleClass Name="Product" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+      <RoleClass Name="Process" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+      <RoleClass Name="Structure" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole">
+        <RoleClass Name="ProductStructure" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+        <RoleClass Name="ProcessStructure" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+        <RoleClass Name="ResourceStructure" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+      </RoleClass>
+      <RoleClass Name="ExternalData" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+    </RoleClass>
+  </RoleClassLib>
+  <RoleClassLib Name="V1Roles">
+    <Version>0</Version>
+    <RoleClass Name="AspectObject">
+      <RoleClass Name="PowerObject" RefBaseClassPath="V1Roles/AspectObject">
+        <RoleClass Name="PowerSystem" RefBaseClassPath="V1Roles/AspectObject/PowerObject" />
+        <RoleClass Name="PowerComponent" RefBaseClassPath="V1Roles/AspectObject/PowerObject" />
+      </RoleClass>
+      <RoleClass Name="FlowObject" RefBaseClassPath="V1Roles/AspectObject" />
+      <RoleClass Name="GrowthObject" RefBaseClassPath="V1Roles/AspectObject">
+        <RoleClass Name="GrowthLight" />
+      </RoleClass>
+    </RoleClass>
+  </RoleClassLib>
+  <RoleClassLib Name="V2Roles">
+    <Version>0</Version>
+  </RoleClassLib>
+  <RoleClassLib Name="V3Roles">
+    <Version>0</Version>
+  </RoleClassLib>
+  <SystemUnitClassLib Name="V1Units">
+    <Version>0</Version>
+    <SystemUnitClass Name="AspectObject" ID="d6e1d265-b987-443d-8ae1-81effff1c3a5">
+      <ExternalInterface Name="AssetRelation" ID="f03f16e4-bf46-406e-b5f7-de3fc9ce4ea3" RefBaseClassPath="V1Interfaces/AssetRelation" />
+      <SupportedRoleClass RefRoleClassPath="V1Roles/AspectObject" />
+    </SystemUnitClass>
+    <SystemUnitClass Name="FlowComponent" ID="6d086524-04a6-423a-bfe4-79cf24b72511" RefBaseClassPath="V1Units/AspectObject">
+      <InternalElement Name="Inlet" ID="386af624-7caf-4a99-be24-753922632f3b">
+        <ExternalInterface Name="FlowConnection" ID="77903025-90ef-415a-a91b-a000ae6bc3fd" RefBaseClassPath="V1Interfaces/FlowConnection" />
+      </InternalElement>
+      <InternalElement Name="Outlet" ID="d9f1bb55-e366-474b-872e-3b6245bb5ac9">
+        <ExternalInterface Name="FlowConnection" ID="90aaa9f2-c582-4014-80b3-419f226f0a19" RefBaseClassPath="V1Interfaces/FlowConnection" />
+      </InternalElement>
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+  <SystemUnitClassLib Name="V2Units">
+    <Version>0</Version>
+  </SystemUnitClassLib>
+  <AttributeTypeLib Name="AutomationMLBaseAttributeTypeLib" ChangeMode="state">
+    <Description>Standard Automation Markup Language Attribute Type Library</Description>
+    <Version>2.10.0</Version>
+    <Copyright>AutomationML e.V.</Copyright>
+    <AttributeType Name="AssociatedExternalValue">
+      <Attribute Name="refCAEXAttribute" AttributeDataType="xs:string" />
+      <Attribute Name="refURI" AttributeDataType="xs:string" />
+      <Attribute Name="Direction" AttributeDataType="xs:string" />
+    </AttributeType>
+    <AttributeType Name="AssociatedFacet" AttributeDataType="xs:string" />
+    <AttributeType Name="Cardinality">
+      <Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" />
+      <Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" />
+    </AttributeType>
+    <AttributeType Name="Category" AttributeDataType="xs:string" />
+    <AttributeType Name="Direction" AttributeDataType="xs:string">
+      <DefaultValue>InOut</DefaultValue>
+      <Constraint Name="AllowedValues">
+        <NominalScaledType>
+          <RequiredValue>In</RequiredValue>
+          <RequiredValue>Out</RequiredValue>
+          <RequiredValue>InOut</RequiredValue>
+        </NominalScaledType>
+      </Constraint>
+    </AttributeType>
+    <AttributeType Name="DocLang" AttributeDataType="xs:string" />
+    <AttributeType Name="Frame" AttributeDataType="">
+      <Attribute Name="x" AttributeDataType="xs:double">
+        <DefaultValue>0</DefaultValue>
+        <Value>0</Value>
+      </Attribute>
+      <Attribute Name="y" AttributeDataType="xs:double">
+        <DefaultValue>0</DefaultValue>
+        <Value>0</Value>
+      </Attribute>
+      <Attribute Name="z" AttributeDataType="xs:double">
+        <DefaultValue>0</DefaultValue>
+        <Value>0</Value>
+      </Attribute>
+      <Attribute Name="rx" AttributeDataType="xs:double">
+        <DefaultValue>0</DefaultValue>
+        <Value>0</Value>
+      </Attribute>
+      <Attribute Name="ry" AttributeDataType="xs:double">
+        <DefaultValue>0</DefaultValue>
+        <Value>0</Value>
+      </Attribute>
+      <Attribute Name="rz" AttributeDataType="xs:double">
+        <DefaultValue>0</DefaultValue>
+        <Value>0</Value>
+      </Attribute>
+    </AttributeType>
+    <AttributeType Name="ListType" AttributeDataType="xs:string" />
+    <AttributeType Name="LocalizedAttribute" AttributeDataType="xs:string" />
+    <AttributeType Name="MIMEType" AttributeDataType="xs:string" />
+    <AttributeType Name="OrderedListType" AttributeDataType="xs:string" />
+    <AttributeType Name="refURI" AttributeDataType="xs:anyURI" />
+  </AttributeTypeLib>
+</CAEXFile>
