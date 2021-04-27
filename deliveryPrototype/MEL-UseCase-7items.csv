@@ -1,0 +1,8 @@
+cost_code_cor;tag_number;iso15926_iri;skid_ref;equipment_type_description;system_number;discipline;area;function_area;sub_area;footprint_m2;net_dry_weight_kg;dry_cog_east_mm;dry_cog_north_mm;dry_cog_elevation_mm
+ERPA;A-20PA001A-M01;http://data.posccaesar.org/rdl/RDS472994;A-20PZ001A;Liquid Export Pump A Motor;20;E;Cellar deck;SKID;AP200;;;;;
+ERPA;A-20PA001B-M01;http://data.posccaesar.org/rdl/RDS472994;A-20PZ001B;Liquid Export Pump B Motor;20;E;Cellar deck;SKID;AP200;;;;;
+ERVA;A-20VA001;http://data.posccaesar.org/rdl/RDS2194378711;;Inlet Separator;20;R;Mezzanine deck;AP300AP400;AP300;12,25;65000;301200;387000;510448
+ERPA;A-20PA001A;http://data.posccaesar.org/rdl/RDS416834;A-20PZ001A;Liquid Export Pump A;20;R;Cellar deck;SKID;AP200;;;304000;399000;501370
+ERPA;A-20PA001B;http://data.posccaesar.org/rdl/RDS416834;A-20PZ001B;Liquid Export Pump B ;20;R;Cellar deck;SKID;AP200;;;304000;393000;501370
+ERPZ;A-20PZ001A;http://data.posccaesar.org/rdl/RDS283589;;Liquid Export Pump A Skid;20;R;Cellar deck;AP200;AP200;16,8;19000;304000;399000;501370
+ERPZ;A-20PZ001B;http://data.posccaesar.org/rdl/RDS283589;;Liquid Export Pump B Skid;20;R;Cellar deck;AP200;AP200;16,8;19000;304000;393000;501370
